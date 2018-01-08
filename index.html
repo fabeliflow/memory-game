@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <!-- Metadata -->
+  <meta name="description" content="Matching Game">
+  <meta name="author" content="Fabio Fiori">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+
+  <title>Matching Game</title>
+
+  <meta name="author" content="Fabio Fiori">
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+
+  <!-- Magnific Popup core CSS file -->
+  <link rel="stylesheet" href="css/vendor/magnific-popup.css">
+
+  <!-- Animate: https://daneden.github.io/animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+  <!-- Score panel -->
+  <div class="score-panel">
+    <ul class="stars">
+      <li><i class="fa fa-star"></i></li>
+      <li><i class="fa fa-star"></i></li>
+      <li><i class="fa fa-star"></i></li>
+    </ul>
+    <span class="moves">0</span> Moves <span class="game-timer"></span>
+    <div class="restart open-popup-link" href="#restart-popup">
+      <i class="fa fa-repeat"></i>
+    </div>
+  </div>
+
+  <!-- Memory table -->
+  <ul class="m-table"></ul>
+
+  <!-- Restart popup -->
+  <div id="restart-popup" class="white-popup mfp-with-anim mfp-hide">
+    <h2>Restart Game</h2>
+    <p>Are you sure? You will your lose score!!!</p>
+    <a id=restart class="m-btn" href="">Restart Game</a>
+  </div>
+
+  <!-- Win popup -->
+  <div id="win-popup" class="white-popup mfp-with-anim mfp-hide">
+    <h2>You Win!</h2>
+    <div class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+      <span class="moves">0</span> Moves <span class="game-timer"></span>
+    </div>
+    <a id=restart class="m-btn" href="">Play Again</a>
+  </div>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/bb6bf5d06e.js"></script>
+
+  <!-- Magnific Popup core JS file (http://dimsemenov.com/plugins/magnific-popup) -->
+  <script src="js/vendor/jquery.magnific-popup.min.js"></script>
+
+  <!-- Easytimer.js (https://github.com/albert-gonzalez/easytimer.js) -->
+  <script src="js/vendor/easytimer.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/custom.js"></script>
+
+  <!-- Wow.js (http://mynameismatthieu.com/WOW) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script>
+  new WOW().init();
+  </script>
+
+</body>
+
+</html>

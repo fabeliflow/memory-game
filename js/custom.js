@@ -20,8 +20,6 @@ $(document).ready(function(){
       // Setup timer for
       timer = new Timer();
 
-      timer.start();
-
       timer.addEventListener('secondsUpdated', function (e) {
         $('.game-timer').html(timer.getTimeValues().toString());
       });
@@ -74,7 +72,7 @@ $(document).ready(function(){
       $('.card').click(function() {
 
         // Check if player selected a maximum of 2 cards and they are not already matched
-        if (!$(this).hasClass('matched') && $('.selected').length < 2) {
+        if (!$(this).hasClass('matched') && !$(this).hasClass('selected') && $('.selected').length < 2) {
 
           $(this).addClass('selected');
 
@@ -142,8 +140,6 @@ $(document).ready(function(){
 
         $('.score-panel').find('i').eq(1).removeClass('fa-star').addClass('fa-star-o');
 
-      } else if (moves > starRating[0]) {
-        $('.score-panel').find('i').eq(0).removeClass('fa-star').addClass('fa-star-o');
       }
     },
 
@@ -154,6 +150,9 @@ $(document).ready(function(){
 
         timer.stop();
 
+        // Add score panel to win popup
+        $('.score-panel').clone().insertBefore('#win-popup .m-btn');
+
         // Display win popup
         $.magnificPopup.open({
           items: {
@@ -161,8 +160,6 @@ $(document).ready(function(){
           },
           type: 'inline'
         });
-
-        memoryGame.rating(memoryGame.moves);
 
         memoryGame.generateCards();
       }
@@ -181,5 +178,10 @@ $(document).ready(function(){
 
   $('#restart').click(function() {
     memoryGame.startGame();
+  });
+
+  // Start timer once the first card is clicked
+  $('.card').one('click', function() {
+    timer.start();
   });
 });

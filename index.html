@@ -29,14 +29,16 @@
 
 <body>
 
-  <!-- Score panel -->
-  <div class="score-panel">
-    <ul class="stars">
-      <li><i class="fa fa-star"></i></li>
-      <li><i class="fa fa-star"></i></li>
-      <li><i class="fa fa-star"></i></li>
-    </ul>
-    <span class="moves">0</span> Moves <span class="game-timer"></span>
+  <!-- Player info -->
+  <div class="player-info">
+    <div class="score-panel">
+      <ul class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+      <span class="moves">0</span> Moves <span class="game-timer">0:00:00</span>
+    </div>
     <div class="restart open-popup-link" href="#restart-popup">
       <i class="fa fa-repeat"></i>
     </div>
@@ -55,14 +57,14 @@
   <!-- Win popup -->
   <div id="win-popup" class="white-popup mfp-with-anim mfp-hide">
     <h2>You Win!</h2>
-    <div class="score-panel">
+    <!-- <div class="score-panel">
       <ul class="stars">
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star"></i></li>
         <li><i class="fa fa-star"></i></li>
       </ul>
-      <span class="moves">0</span> Moves <span class="game-timer"></span>
-    </div>
+      <span class="moves">0</span> Moves <span class="game-timer">0:00:00</span>
+    </div> -->
     <a id=restart class="m-btn" href="">Play Again</a>
   </div>
 

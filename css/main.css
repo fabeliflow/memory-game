@@ -4,20 +4,20 @@
 
 .m-table,
 body {
-  display: -ms-flexbox
+  display: -ms-flexbox;
 }
 
 .card,
 body {
   -webkit-box-orient: vertical;
-  -webkit-box-direction: normal
+  -webkit-box-direction: normal;
 }
 
 body,
 html {
   width: 100%;
   height: 100%;
-  color: #282525
+  color: #282525;
 }
 
 body {
@@ -34,7 +34,7 @@ body {
   overflow: hidden;
   font-family: Ubuntu, sans-serif;
   background: linear-gradient(90.75deg, #faf4f0 0, #ebf1fc 100%);
-  background-image: linear-gradient(90.75deg, #faf4f0 0, #ebf1fc 100%)
+  background-image: linear-gradient(90.75deg, #faf4f0 0, #ebf1fc 100%);
 }
 
 /* Memory game table styles */
@@ -50,7 +50,7 @@ body {
   max-width: 300px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center
+  justify-content: center;
 }
 
 /* Card styles */
@@ -81,99 +81,100 @@ body {
   -webkit-transition: -webkit-transform .3s ease;
   transition: -webkit-transform .3s ease;
   transition: transform .3s ease;
-  transition: transform .3s ease, -webkit-transform .3s ease
+  transition: transform .3s ease, -webkit-transform .3s ease;
 }
 
 @media (min-width:768px) {
   .m-table {
-    max-width: 400px
+    max-width: 400px;
   }
   .card {
     margin: 10px;
     height: 100px;
-    width: 75px
+    width: 75px;
   }
 }
 
 .card.selected {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: #2B92DB
+  background: #2B92DB;
 }
 
 .card.matched {
   -webkit-transform: rotateY(180deg);
   transform: rotateY(180deg);
-  background: #2BDB74
+  background: #2BDB74;
 }
 
 .card.matched,
 .card.selected {
-  cursor: default
+  cursor: default;
 }
 
 .card .fa {
   -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d
+  transform-style: preserve-3d;
 }
 
 /* Score panel styles */
 .score-panel {
-  margin-bottom: 20px
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .score-panel .stars {
   padding: 0;
   display: inline-block;
-  margin: 0 5px 0 0
+  margin: 0 5px 0 0;
 }
 
 .score-panel .stars li {
   list-style: none;
-  display: inline-block
+  display: inline-block;
 }
 
-.score-panel .restart {
-  float: right;
+.restart {
+  display: inline-block;
   margin-left: 20px;
-  cursor: pointer
+  cursor: pointer;
 }
 
 /* Magnific popup styles */
 .mfp-fade.mfp-bg {
   opacity: 0;
   -webkit-transition: all .15s ease-out;
-  transition: all .15s ease-out
+  transition: all .15s ease-out;
 }
 
 .mfp-fade.mfp-bg.mfp-ready {
-  opacity: .97
+  opacity: .97;
 }
 
 .mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0
+  opacity: 0;
 }
 
 .mfp-fade.mfp-wrap .mfp-content {
   opacity: 0;
   -webkit-transition: all .15s ease-out;
-  transition: all .15s ease-out
+  transition: all .15s ease-out;
 }
 
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1
+  opacity: 1;
 }
 
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0
+  opacity: 0;
 }
 
 .mfp-bg {
-  background-color: #383838
+  background-color: #383838;
 }
 
 .mfp-close-btn-in .mfp-close {
-  color: #e3e3e3
+  color: #e3e3e3;
 }
 
 .white-popup {
@@ -184,7 +185,7 @@ body {
   padding: 25px;
   width: auto;
   max-width: 400px;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
 .m-btn {
@@ -195,13 +196,13 @@ body {
   text-decoration: none;
   color: #fff;
   background-image: -webkit-gradient(linear, left top, right top, from(#02AAB0), color-stop(51%, #00CDAC), to(#02AAB0));
-  background-image: linear-gradient(to right, #02AAB0 0, #00CDAC 51%, #02AAB0 100%)
+  background-image: linear-gradient(to right, #02AAB0 0, #00CDAC 51%, #02AAB0 100%);
 }
 
 .m-btn:hover {
-  background-position: right center
+  background-position: right center;
 }
 
 .m-btn:not(:last-child) {
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
